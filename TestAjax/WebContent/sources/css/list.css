@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+ body {
+  color:black;
+  
+  }
+/*   
+h1 {
+	color:green;
+} */
+
+/* .center {text-align: center} */
+
+#red {color:red;}
+#green {color:green;}
+
+td {
+  text-align:right;
+  color:red;
+  }
+  
+th {
+  background-color:green;
+  color:red;
+  }
+  
+  /* table
+  {
+  border: 1px solid blue;
+  } */
