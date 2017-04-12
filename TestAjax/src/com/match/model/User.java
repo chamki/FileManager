@@ -1,17 +1,28 @@
 package com.match.model;
 
+/**
+ * 用户类
+ * @author Administrator
+ *
+ */
 public class User {
 
+	//Id
 	private String id;
 	
+	//姓名
 	private String name;
 	
+	//密码
 	private String password;
 	
+	//联系电话
 	private String phone;
 	
+	//邮箱地址
 	private String email;
 	
+	//住址
 	private String address;
 
 	public String getId() {
@@ -62,12 +73,18 @@ public class User {
 		this.address = address;
 	}
 	
+	/**
+	 * 重写toString方法
+	 */
 	@Override
 	public String toString() {
 		return "[ id = " + id + "; name = " + name + "; password = " + password + "; phone = "
 				+ phone + "; email = "+ email + "; address = "+ address;
 	}
 	
+	/**
+	 * 重写equals方法
+	 */
 	@Override
 	public boolean equals(Object o) {
 		if(o instanceof User){
@@ -79,6 +96,9 @@ public class User {
 		return false;
 	}
 	
+	/**
+	 * 重写hashCode方法
+	 */
 	@Override
 	public int hashCode() {
 		return id.hashCode();
